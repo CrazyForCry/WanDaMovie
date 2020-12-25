@@ -1,0 +1,216 @@
+#header {
+	width: 100%;
+	height: 1rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+}
+
+#header .icon-naoling {
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	font-size: 0.18rem;
+	color: white;
+	cursor: pointer;
+}
+
+#header ul {
+	width: 80%;
+	margin: 0 auto;
+	height: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+#header ul li {
+	text-align: center;
+	font-size: 0.16rem;
+}
+
+#header ul li:first-of-type {
+	margin-top: 0.1rem;
+}
+
+#header ul li:first-of-type .iconfont {
+	font-size: 0.4rem;
+	color: white;
+}
+
+#header ul li:first-of-type a {
+	display: block;
+	color: white;
+}
+
+#header ul li:last-of-type {
+	color: white;
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+#container {
+	width: 100%;
+	height: 7rem;
+	/* background-color: #87CEEB; */
+	z-index: 0;
+}
+
+#iconList {
+	width: 90%;
+	margin: 0 auto;
+	height: 0.8rem;
+	/* line-height: 1rem; */
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#iconList li {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.16rem;
+}
+
+#iconList li span {
+	text-align: center;
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+	line-height: 0.3rem;
+	margin-left: 0.4rem;
+	margin-top: 0.2rem;
+	color: #d1b17d;
+}
+
+#iconList li p {
+	margin-top: 0.1rem;
+}
+
+#list-outside {
+	width: 100%;
+	height: 5rem;
+	background-color: gainsboro;
+}
+
+#list-outside .list-outside-li {
+	width: 100%;
+	height: 5rem;
+	margin-top: 0.2rem;
+	background-color: white;
+}
+
+#list-outside .list-outside-li:first-of-type {
+	height: 50%;
+}
+
+#list-outside .list-outside-li:nth-of-type(2) {
+	height: 25%;
+}
+
+#list-outside .list-outside-li:last-of-type {
+	height: 25%;
+}
+
+#list-outside .list-outside-li:first-of-type .list-inside {
+	width: 100%;
+	height: 100%;
+}
+
+#list-outside .list-outside-li:first-of-type .list-inside li {
+	width: 100%;
+	height: 25%;
+	line-height: 0.6rem;
+	clear: both;
+	border-bottom: 0.01rem solid lightgray;
+}
+
+#list-outside .list-outside-li:first-of-type .list-inside li span,
+#list-outside .list-outside-li:nth-of-type(2) .list-inside li span,
+#list-outside .list-outside-li:last-of-type .list-inside li span {
+	font-size: 0.16rem;
+	float: left;
+	margin-left: 0.2rem;
+}
+
+#list-outside .list-outside-li:first-of-type .list-inside li span:first-of-type,
+#list-outside .list-outside-li:nth-of-type(2) .list-inside li span:first-of-type,
+#list-outside .list-outside-li:last-of-type .list-inside li span:first-of-type {
+	font-size: 0.24rem;
+	color: #d1b17d;
+}
+
+#list-outside .list-outside-li:first-of-type .list-inside li span:last-of-type,
+#list-outside .list-outside-li:nth-of-type(2) .list-inside li span:last-of-type,
+#list-outside .list-outside-li:last-of-type .list-inside li span:last-of-type {
+	float: right;
+	margin-right: 0.2rem;
+	margin-left: 0;
+	font-size: 0.20rem;
+}
+
+#list-outside .list-outside-li:nth-of-type(2) .list-inside,
+#list-outside .list-outside-li:last-of-type .list-inside {
+	width: 100%;
+	height: 100%;
+}
+
+#list-outside .list-outside-li:nth-of-type(2) .list-inside li,
+#list-outside .list-outside-li:last-of-type .list-inside li {
+	width: 100%;
+	height: 50%;
+	line-height: 0.6rem;
+	clear: both;
+	border-bottom: 0.01rem solid lightgray;
+}
+
+
+#footer {
+	border-top: 0.01rem solid lightgray;
+	width: 100%;
+	height: 0.6rem;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+}
+
+#footer ul {
+	width: 100%;
+	height: 0.6rem;
+	/* line-height: 0.2rem; */
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer ul li {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.14rem;
+}
+
+#footer ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: lightgray;
+}
+.current{
+	color: #d1b17d;
+}
+#footer ul li:nth-of-type(2) a .iconfont {
+	font-size: 0.25rem;
+}
+
+#footer ul li:nth-of-type(4) a .iconfont {
+	font-size: 0.25rem;
+}
+	
+#footer ul li:first-of-type a,
+#footer ul li:nth-of-type(3) a{
+	margin-top: 0.07rem;
+}
+#footer ul li:nth-of-type(3) a p,
+#footer ul li:nth-of-type(1) a p{
+	padding-top: 0.02rem;
+}

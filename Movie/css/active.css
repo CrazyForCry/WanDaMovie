@@ -1,0 +1,182 @@
+#header {
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	border-bottom: 0.01rem solid lightgray;
+	z-index: 10;
+}
+
+#header h1 {
+	font-size: 0.18rem;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+#container {
+	width: 100%;
+	height: 34rem;
+	margin-top: 0.6rem;
+	/* background-color: #63A35C; */
+	z-index: 1;
+}
+#iconList {
+	width: 90%;
+	margin: 0 auto;
+	height: 1rem;
+	/* line-height: 1rem; */
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#iconList li {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.16rem;
+}
+
+#iconList li span {
+	text-align: center;
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+	line-height: 0.3rem;
+	margin-left: 0.4rem;
+	margin-top: 0.2rem;
+}
+
+#iconList li:first-of-type span {
+	background-color: lightgreen;
+}
+
+#iconList li:nth-of-type(2) span {
+	background-color: lightblue;
+}
+
+#iconList li:last-of-type span {
+	background-color: lightsalmon;
+}
+
+#iconList li p {
+	margin-top: 0.1rem;
+}
+#container #showList {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+}
+
+#container #showList li {
+	width: 100%;
+	height: 3rem;
+	/* background-color: #2C8DFB; */
+	clear: both;
+	border-bottom: 0.01rem solid lightgray;
+}
+
+#container #showList li img {
+	width: 100%;
+}
+
+#container #showList li h3 {
+	width: 100%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+	padding: 0 0.12rem;
+}
+
+#container #showList li p {
+	padding: 0 0.1rem;
+}
+
+#container #showList li p:first-of-type {
+	float: left;
+	height: 0.3rem;
+}
+
+#container #showList li p:last-of-type {
+	float: right;
+	height: 0.3rem;
+}
+
+#container #showList li p span {
+	display: block;
+	float: left;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+}
+
+#container #showList li p:first-of-type span {
+	color: #d1b17d;
+}
+
+#container #showList li p:last-of-type span {
+	color: gray;
+}
+
+#container #showList li p:last-of-type .iconfont {
+	font-size: 0.22rem;
+}
+
+
+
+
+
+#footer {
+	border-top: 0.01rem solid lightgray;
+	width: 100%;
+	height: 0.6rem;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+}
+
+#footer ul {
+	width: 100%;
+	height: 0.6rem;
+	/* line-height: 0.2rem; */
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer ul li {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.14rem;
+}
+
+#footer ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: lightgray;
+}
+.current{
+	color: #d1b17d;
+}
+#footer ul li:nth-of-type(2) a .iconfont {
+	font-size: 0.25rem;
+}
+
+#footer ul li:nth-of-type(4) a .iconfont {
+	font-size: 0.25rem;
+}
+	
+#footer ul li:first-of-type a,
+#footer ul li:nth-of-type(3) a{
+	margin-top: 0.07rem;
+}
+#footer ul li:nth-of-type(3) a p,
+#footer ul li:nth-of-type(1) a p{
+	padding-top: 0.02rem;
+}

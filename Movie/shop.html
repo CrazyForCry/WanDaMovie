@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/shop.css" />
+		<script src="./js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/data.js" type="text/javascript" charset="utf-8"></script>
+		<title>万达影院</title>
+		<script type="text/javascript">
+			// 1rem = 100px
+			// 1px = 0.01rem
+			(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if (clientWidth === undefined) return;
+						//以ip5为基准  
+						docEl.style.fontSize = (clientWidth * 100) / 375 + 'px';
+					};
+				if (doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>大连XXXX电影店</h1>
+		</div>
+		<div id="container">
+			<ul>
+				<li class="list-outside">
+					<div class="container-top">
+						<p>会员卡</p>
+						<p>查看全部<span class="iconfont icon-iconfontjiantou5"></span></p>
+					</div>
+					<ul class="list-inside
+">
+						<li>
+							<img src="./img/cut_picture (57).jpg" />
+							<h3>至尊卡(小红花)</h3>
+							<p>
+								<span>限量卡面</span>
+								<span>限时抢购</span>
+							</p>
+							<p>
+								<span>储蓄卡</span>
+								<span>&yen;300起</span>
+							</p>
+						</li>
+						<li>
+							<img src="./img/cut_picture (58).jpg" />
+							<h3>至尊卡(晴雅集)</h3>
+							<p>
+								<span>限量卡面</span>
+								<span>限时抢购</span>
+							</p>
+							<p>
+								<span>储蓄卡</span>
+								<span>&yen;300起</span>
+							</p>
+						</li>
+					</ul>
+				</li>
+
+				<li class="list-outside">
+					<div class="container-top">
+						<p>优惠券</p>
+						<p>查看全部<span class="iconfont icon-iconfontjiantou5"></span></p>
+					</div>
+					<ul class="list-inside
+				">
+						<li>
+							<img src="./img/cut_picture (60).jpg" />
+							<h3>2020甜蜜礼包</h3>
+							<p>
+								<span>&yen;1212</span>
+							</p>
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+			<div class="ad">
+				<img src="./img/222224.71918821_235X132X4.jpg">
+			</div>
+
+
+		</div>
+
+
+		<div id="footer">
+			<ul>
+				<li>
+					<a href="index.html" >
+						<span class="iconfont icon-dianying"></span>
+						<p>电影</p>
+					</a>	
+				</li>
+				<li>
+					<a href="active.html">
+						<span class="iconfont icon-huodong "></span>
+						<p>活动</p>
+					</a>
+					
+				</li>
+				<li>
+					<a href="shop.html">
+						<span class="iconfont icon-huodong1 current"></span>
+						<p class="current">商城</p>
+					</a>
+					
+				</li>
+				<li>
+					<a href="my.html">
+						<span class="iconfont icon-wo"></span>
+						<p>我</p>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+
+		<div id="fixedShopCar">
+			<span class="iconfont icon-gouwuchekong"></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#fixedShopCar").click(function(){
+			window.location.href = "shopCar.html";
+		})
+	</script>
+</html>

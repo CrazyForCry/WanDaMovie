@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<script src="./js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/data.js" type="text/javascript" charset="utf-8"></script>
+    <title>万达影院</title>
+    <script type="text/javascript">
+		// 1rem = 100px
+		// 1px = 0.01rem
+    	(function (doc, win, undefined) {
+    	            var docEl = doc.documentElement,
+    	              resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+    	              recalc = function () {
+    	                var clientWidth = docEl.clientWidth;
+    	                if (clientWidth === undefined) return;
+    	                //以ip5为基准  
+    	                docEl.style.fontSize =(clientWidth*100) / 375 + 'px';
+    	             };
+    	           if (doc.addEventListener === undefined) return;
+    	         win.addEventListener(resizeEvt, recalc, false);
+    	           doc.addEventListener('DOMContentLoaded', recalc, false)
+    	         })(document, window);
+    </script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li>
+				<span>大连</span>
+			</li>
+			<li>
+				<div>
+					<span>影片</span>
+					<span>影院</span>
+				</div>		
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="./img/qr.png" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="container">
+		<!-- Swiper -->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper" id="imgListData">
+		     
+		    </div>
+			<script type="text/text/x-jquery-tmpl" id="imgDataInfo">
+				<div class="swiper-slide">
+					<img src="${imgSrc}" />
+				</div>
+			</script>
+			<script type="text/javascript">
+				$("#imgDataInfo").tmpl(data.imgData).appendTo("#imgListData");
+			</script>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				slidesPerView: 1,
+				autoplay:2000,
+				paginationClickable: true,
+				spaceBetween: 30,
+				loop: true
+			});
+		</script>
+		<ul class="televising">
+			<li>
+				正在热映
+			</li>
+			<li>
+				即将上映
+			</li>
+		</ul>
+		
+		<ul class="moiveList" id="moiveList">
+			
+		</ul>
+		<script type="text/x-jquery-tmpl" id="moiveListInfo">
+			<li>
+				<div class="list-left">
+					<img src="${img}" />
+					<span class="iconfont icon-bofang1"></span>
+				</div>
+				<div class="list-middle">
+					<h1 class="title">${title}</h1>
+					<p class="classification">评分
+						<span>${classification}</span>
+					</p>
+					<p class="descp">${descp}</p>
+					<p class="actor">${actor}</p>
+					<p class="type">
+						<span>${type1}</span>
+						<span>${type2}</span>
+						<span>${type3}</span>
+					</p>
+				</div>
+				<div class="list-right">
+					<p class="${classType}">${buy}</p>
+				</div>
+			</li>
+		</script>
+	</div>
+	<div id="footer">
+		<ul>
+			<li>
+				<a href="index.html">
+					<span class="iconfont icon-dianying current"></span>
+					<p class="current">电影</p>
+				</a>
+				
+			</li>
+			<li>
+				<a href="active.html">
+					<span class="iconfont icon-huodong"></span>
+					<p>活动</p>
+				</a>
+				
+			</li>
+			<li>
+				<a href="shop.html">
+					<span class="iconfont icon-huodong1"></span>
+					<p>商城</p>
+				</a>
+				
+			</li>
+			<li>
+				<a href="my.html">
+					<span class="iconfont icon-wo"></span>
+					<p>我</p>
+				</a>
+				
+			</li>
+		</ul>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$("#moiveListInfo").tmpl(data.movieListData).appendTo("#moiveList");
+</script>
+</html>

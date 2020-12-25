@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/my.css" />
+		<script src="./js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/data.js" type="text/javascript" charset="utf-8"></script>
+		<title>万达影院</title>
+		<script type="text/javascript">
+			// 1rem = 100px
+			// 1px = 0.01rem
+			(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if (clientWidth === undefined) return;
+						//以ip5为基准  
+						docEl.style.fontSize = (clientWidth * 100) / 375 + 'px';
+					};
+				if (doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<span class="iconfont icon-naoling"></span>
+			<ul>
+				<li>
+					<span class="iconfont icon-wode"></span>
+					<a href="login.html">注册/登陆</a>
+				</li>
+				<li>
+					<h2>欢迎来到万达电影</h2>
+					<p>”生活因为万达电影更美好“</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="container">
+			<ul id="iconList">
+				<li>
+					<span class="iconfont icon-dingdan"></span>
+					<p>订单</p>
+				</li>
+				<li>
+					<span class="iconfont icon-youhuiquan01"></span>
+					<p>优惠券</p>
+				</li>
+				<li>
+					<span class="iconfont icon-huiyuanqiagoumai"></span>
+					<p>会员卡</p>
+				</li>
+			</ul>
+			<ul id="list-outside">
+				<li class="list-outside-li">
+					<ul class="list-inside">
+						<li>
+							<span class="iconfont icon-xunzhang"></span>
+							<span>我的勋章</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+						<li>
+							<span class="iconfont icon-ico"></span>
+							<span>会员码</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+						<li>
+							<span class="iconfont icon-zuanshi"></span>
+							<span>会员手册</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+						<li>
+							<span class="iconfont icon-qian"></span>
+							<span>我的积分</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+					</ul>
+				</li>
+				<li class="list-outside-li">
+					<ul class="list-inside">
+						<li>
+							<span class="iconfont icon-dianying1"></span>
+							<span>我的影单</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+						<li>
+							<span class="iconfont icon-jiangbei"></span>
+							<span>我的奖品</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+					</ul>
+				</li>
+				<li class="list-outside-li">
+					<ul class="list-inside">
+						<li>
+							<span class="iconfont icon-kefu"></span>
+							<span>我的客服</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+						<li>
+							<span class="iconfont icon-shezhi"></span>
+							<span>设置</span>
+							<span class="iconfont icon-iconfontjiantou5"></span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="footer">
+			<ul>
+				<li>
+					<a href="index.html" >
+						<span class="iconfont icon-dianying"></span>
+						<p>电影</p>
+					</a>	
+				</li>
+				<li>
+					<a href="active.html">
+						<span class="iconfont icon-huodong"></span>
+						<p>活动</p>
+					</a>
+					
+				</li>
+				<li>
+					<a href="shop.html">
+						<span class="iconfont icon-huodong1"></span>
+						<p>商城</p>
+					</a>
+					
+				</li>
+				<li>
+					<a href="my.html">
+						<span class="iconfont icon-wo current"></span>
+						<p class="current">我</p>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
